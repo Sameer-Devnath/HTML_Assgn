@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Coffee</title>
+    <style>
+        #par{
+            width:100%;
+            height:auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            /* border:1px solid black; */
+            background-image: url(https://i.pinimg.com/originals/51/07/13/510713d937a966b724680e6b6f38ff71.jpg);
+            /* background-image: url(https://freedesignfile.com/upload/2017/01/White-geometric-shapes-backgrounds-vector-set-11.jpg); */
+        }
+        #parent{
+            width:80%;
+            height:auto;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-left: 10%;
+            margin-right: 10%;
+            /* border:2px solid green; */
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            /* gap:10px; */
+        }
+        
+        #parent > div{
+            /* border:1px solid blue; */
+            background-color: whitesmoke;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 8%;
+        }
+
+        .child{
+            width:auto;
+            height:auto;
+            /* border:1px solid red; */
+            display:flex;
+            justify-content: space-between;
+        }
+        .child1{
+            width:max-content;
+            height:auto;
+            /* border:2px solid brown; */
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        .child2{
+            width:max-content;
+            height:auto;
+            /* border:2px solid brown; */
+            font-size: x-large;
+            font-weight: bolder;
+            color: rgb(182,136,52);
+        }
+        p{
+            color: gray;
+            font-size: large;
+        }
+        @media screen and (min-width:750px) and (max-width:1024px){
+            #parent{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media screen and (min-width:450px) and (max-width:749px){
+            #parent{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media screen and (min-width:200px) and (max-width:449px){
+            #parent{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div id="par">
+        <div id="parent">
+        
+            <div>
+                <div class="child">
+                    <div class="child1">Cappuccino</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Americano</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Espresso</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Macchiato</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Mocha</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Coffee Latte</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Piccolo Latte</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Ristretto</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            <div>
+                <div class="child">
+                    <div class="child1">Affogato</div>
+                    <div class="child2">$49</div>
+                </div>
+                
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
